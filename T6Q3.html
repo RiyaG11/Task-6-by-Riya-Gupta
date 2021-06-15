@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Question 3
+		</title>
+	</head>
+	
+	<body style = "text-align:center; background: bisque;">
+		
+        <h2 style="background-color: rgb(185, 185, 185); font-family: cursive; color: darkblue; text-align: center;" > WAP in JS to Pass a Function as Parameter</h2>
+		
+		<h3>
+			Passing function as Parameter
+        </h3>
+		
+		<!-- Function call after clicking the button -->
+		<button onclick = "ques_outer(ques_inner)" style="background: darkgrey;">
+			Click Here
+		</button>	
+		
+		<script>
+			function ques_inner(value){
+				return 'Hello User! Hope you are doing well';
+			}
+			function ques_outer(func){
+				alert(func());
+			}
+		</script>
+	</body>
+</html>					

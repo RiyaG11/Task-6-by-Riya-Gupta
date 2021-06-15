@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body style="text-align:center; background-color: bisque;">
+    <h2 style="background-color: rgb(185, 185, 185); font-family: cursive; color: darkblue; text-align: center;" > WAP in JS to Check Given Year is Leap Year</h2>
+
+    <script type="text/javascript" style="color: blue;">
+    function chk(y)
+    {
+        if ((y%100!=0) && (y%4==0) || (y%400==0)) 
+        {
+            alert("It is a Leap Year")
+        } 
+        else 
+        {
+           alert("It is not a Leap Year") 
+        }
+    }
+    </script>
+    <h3>Enter the Year: 
+        <input type="text" id="one" placeholder="Enter the Year" style="background: floralwhite;">
+        <input type="button" value="Check" onclick="chk(one.value);" style="background-color: darkgray;"></h3> 
+    
+</body>
+</html>

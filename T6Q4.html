@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+</head>
+<body style="text-align:center; background-color: bisque;">
+    <h2 style="background-color: rgb(185, 185, 185); font-family: cursive; color: darkblue; text-align: center;" > WAP in JS to Merge Two Arrays and Remove Duplicate Items</h2>
+    <div class="container">
+
+    </div>
+    <script>
+        function merge_array(array1, array2) {
+    var result_array = [];
+    var arr = array1.concat(array2);
+    var len = arr.length;
+    var assoc = {};
+
+    while(len--) {
+        var item = arr[len];
+
+        if(!assoc[item]) 
+        { 
+            result_array.unshift(item);
+            assoc[item] = true;
+        }
+    }
+
+    return result_array;
+}
+
+
+var array1 = [1, 4, 6];
+
+var array2 = [4,11,23];
+
+console.log(merge_array(array1, array2));
+
+    </script>
+</body>
+</html>

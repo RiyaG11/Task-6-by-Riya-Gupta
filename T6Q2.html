@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <script>
+        function calc()
+        {
+            var a = parseInt(document.getElementById('a').value);
+            var b = parseInt(document.getElementById('b').value);
+            var oper = document.getElementById('operators').value;
+
+            if(oper === '+')
+            {
+                document.getElementById('Result').value = a+b; 
+            }
+            if(oper === '-')
+            {
+                document.getElementById('Result').value = a-b; 
+            }
+            if(oper === '/')
+            {
+                document.getElementById('Result').value = a/b; 
+            }
+            if(oper === '*')
+            {
+                document.getElementById('Result').value = a*b; 
+            }
+        }
+
+
+
+
+    </script>
+</head>
+<body style="text-align:center; background-color: bisque;">
+    <h2 style="background-color: rgb(185, 185, 185); font-family: cursive; color: darkblue; text-align: center;" > WAP in JS for Performing Arithmetic Operation on Two Numbers According to Input Operator</h2>
+    <h3>Your first digit: <input type="text" id="a" placeholder="Enter first digit" style="background: floralwhite; color: darkblue;"></h3>
+    <br/><br/>
+    
+    <h3>Select desired operator: <select id="operators" style="background: darkgray;">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="*">*</option>
+
+    </select></h3>
+    <br/><br/>
+    <h3>Your second digit: <input type="text" id="b" placeholder="Enter second digit" style="background: floralwhite; color: darkblue;"></h3>
+    <br/><br/>
+    <h3>For result click on: <button onclick="calc()" style="background: darkgray;">=</button> </h3><br/><br/>
+    <h3>Here is your Result: <input type="text" id="Result" placeholder="Your Result" style="background: rgb(209, 255, 209); color: darkslateblue;"> </h3>
+    
+    
+    
+</body>
+</html>
